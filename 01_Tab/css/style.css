@@ -1,0 +1,53 @@
+.tab-interface {
+  width: 40rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.tab-list {
+  display: flex;
+}
+
+.tab-list li {
+  padding: 0.8rem 1rem 0.4rem;
+  border: 1px solid #ddd;
+  margin-right: 0.5rem;
+  border-radius: 0.4rem 0.4rem 0 0;
+  color: #757575;
+  background: #eee;
+}
+
+.tab-list li[aria-selected="true"] {
+  background: #fff;
+  border-bottom: 1px solid #fff;
+  font-weight: bold;
+  color: #333;
+}
+
+.tab-panel {
+  padding: 2rem;
+  border: 1px solid #ddd;
+  line-height: 1.2;
+  margin-top: -1px;
+}
+
+.tab-panel.hidden {
+  display: none;
+}
+
+.tab-panel h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.tab-panel .more-btn {
+  position: absolute;
+  top: 0.4em;
+  right: 0;
+}
+
+.tab-panel .more-btn:focus {
+  font-weight: bold;
+  outline: inherit;
+}

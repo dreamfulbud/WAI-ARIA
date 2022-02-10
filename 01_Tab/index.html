@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<h1>Tab UI</h1>
+		<section class="tab-interface">
+			<h2 class="a11y-hidden">HTML/CSS/JavaScript</h2>
+			<ul class="tab-list" role="tablist">
+				<li role="tab" aria-controls="tab-section1" aria-selected="true" tabindex="0">HTML</li>
+				<li role="tab" aria-controls="tab-section2" aria-selected="false" tabindex="0">CSS</li>
+				<li role="tab" aria-controls="tab-section3" aria-selected="false" tabindex="0">JavaScript</li>
+			</ul>
+			<section class="tab-panel" role="tabpanel" id="tab-section1" aria-labelledby="tab1">
+				<h3>HTML</h3>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et sed exercitationem architecto ab, magni eaque ipsa repellat aliquam fuga labore velit accusantium suscipit quia odit, quaerat,
+					cupiditate eos adipisci rerum!
+				</p>
+				<a class="more-btn" href="#">HTML 상세보기</a>
+			</section>
+			<section class="tab-panel hidden" role="tabpanel" id="tab-section2" aria-labelledby="tab2">
+				<h3>CSS</h3>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et sed exercitationem architecto ab, magni eaque ipsa repellat aliquam fuga labore velit accusantium suscipit quia odit, quaerat,
+					cupiditate eos adipisci rerum!
+				</p>
+				<a class="more-btn" href="#">CSS 상세보기</a>
+			</section>
+			<section class="tab-panel hidden" role="tabpanel" id="tab-section3" aria-labelledby="tab3">
+				<p>
+					<h3>JavaScript</h3>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et sed exercitationem architecto ab, magni eaque ipsa repellat aliquam fuga labore velit accusantium suscipit quia odit, quaerat,
+					cupiditate eos adipisci rerum!
+				</p>
+				<a class="more-btn" href="#">JS 상세보기</a>
+			</section>
+		</section>
+		<script src="./script.js"></script>
+	</body>
+</html>
