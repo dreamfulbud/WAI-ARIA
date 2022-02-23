@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<fieldset>
+			<div>
+				<legend><strong>생년월일</strong></legend>
+			</div>
+			<div>
+				<select id="user_birthday_year" name="user_birthday_year">
+					<option value="">년</option>
+					<option value="1">2022</option>
+				</select>
+				년
+				<select id="user_birthday_month" name="user_birthday_month">
+					<option value="">월</option>
+					<option value="1">1</option>
+				</select>
+				월
+				<select id="user_birthday_day" name="user_birthday_day">
+					<option value="">일</option>
+					<option value="1">1</option>
+				</select>
+				일
+			</div>
+		</fieldset>
+
+		<!-- 주문자 정보 -->
+		<h2 id="order-info">주문자정보</h2>
+		<div role="group" aria-labelledby="order-info">
+			<div>
+				<label for="user-name">이름</label>
+				<input type="text" name="user-name" id="user-name" />
+			</div>
+			<div class="field-item" role="group" aria-labelledby="label-tel">
+				<span role="group" id="label-tel">전화번호</span>
+				<input type="text" name="user-tel-1" id="user-tel-1" aria-label="국번" />- <input type="text" name="user-tel-2" id="user-tel-2" aria-label="가운데 자리" />-
+				<input type="text" name="user-tel-3" id="user-tel-3" aria-label="마지막 자리" />-
+			</div>
+			<div>
+				<label for="user-email">이름</label>
+				<input type="email" name="user-email" id="user-email" />
+			</div>
+		</div>
+
+		<!-- 배송지 정보 -->
+		<h2 id="delivery-info">배송지 정보</h2>
+		<div role="group" aria-labelledby="delivery-info">
+			<div>
+				<label for="delivery-name">이름</label>
+				<input type="text" name="delivery-name" id="delivery-name" />
+			</div>
+			<div role="group" aria-labelledby="label-tel2">
+				<span role="group" id="label-tel2">전화번호</span>
+				<input type="text" name="delivery-tel-1" id="delivery-tel-1" aria-label="국번" />- <input type="text" name="delivery-tel-2" id="delivery-tel-2" aria-label="가운데 자리" />-
+				<input type="text" name="delivery-tel-3" id="delivery-tel-3" aria-label="마지막 자리" />-
+			</div>
+			<div role="group" aria-labelledby="label-addr">
+				<span for="label-addr">배송지주소</span>
+				<input type="text" name="delivery-post" id="delivery-post" aria-label="우편번호" />
+				<input type="text" name="delivery-addr" id="delivery-addr" aria-label="상세 주소" />
+			</div>
+		</div>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
