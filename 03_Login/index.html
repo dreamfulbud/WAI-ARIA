@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<h1>Login UI</h1>
+		<!-- 
+			input 요소 사용 시 label 요소를 사용하는 것이 원칙.
+			해당 예제는 label을 aria-label 속성으로 제목 역할을 대신함.
+			input 요소에 aria-label 속성이나, aria-labelledby 속성을 사용하면 label 요소의 텍스트는 읽지 않음.
+			(단, input의 title 속성은 읽음.)
+			button 요소에 사용하면 button 요소의 텍스트를 읽지 않음으로 주의!
+			label 요소의 텍스트를 읽어야 하는 경우는 aria-labelledby 속성대신  aria-describedby 속성 사용.
+			=>스크린 리더 label 요소의 텍스트와 aria-describedby 속성과 연결된 추가 설명까지 함께 읽음.
+		 -->
+		<form>
+			<input type="text" aria-label="아이디" aria-describedby="id-helper" title="아이디" placeholder="아이디" />
+			<span id="id-helper" class="a11y-hidden">5~20의 영문 소문자, 숫자, 특수기호(_),(-)만 사용하여 입력해 주세요</span>
+			<input type="password" aria-label="패스워드" aria-describedby="pw-helper" title="패스워드" placeholder="패스워드" />
+			<span id="pw-helper" class="a11y-hidden">6~16자 영문 대 소문자, 숫자, 특수문자를 사용하여 입력해주세요.</span>
+			<button type="submit">로그인</button>
+		</form>
+	</body>
+</html>
