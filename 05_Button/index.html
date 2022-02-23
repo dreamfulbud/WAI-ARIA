@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<h1>Button</h1>
+		<h2>Best : button, input[type="button"] 이용하기</h2>
+		<input class="button" type="button" value="Print" />
+		<button class="button" type="button">Print</button>
+		<!-- 
+			a 요소 : 새로운 리소스를 가져오거나 새로운 페이지를 불러오기 위한 것!
+			button 요소 : 데이터의 업데이트나 변경, 레이어팝업 열기, 페이지의 특정요소를 열거나 닫는 기능 등 어떤 특정 동작을 하는 것!
+
+			a 요소 사용시 사용자는 버튼이 아닌 링크로 인식, 혼란을 줄 수 있음
+			a 요소에 href 속성을 삭제하는 경우 키보드 포커스를 받지 못함으로 주의!
+		-->
+		<h2>WAI-ARIA</h2>
+		<h3 id="language">언어선택</h3>
+		<div class="group" aria-labelledby="language">
+			<div class="button" id="lang-kor" tabindex="0" role="button" aria-pressed="ture">Korea</div>
+			<div class="button" id="lang-eng" tabindex="0" role="button" aria-pressed="flase">English</div>
+		</div>
+		<!-- 			
+			role="button" : 엔터키 또는 스페이스 바로 선택
+			aria-pressed :버튼 눌림 상태 true/false
+			aria-disabled : 버튼 비활성화, 더이상 사용X
+		 -->
+		<script src="./js/script.js"></script>
+	</body>
+</html>
