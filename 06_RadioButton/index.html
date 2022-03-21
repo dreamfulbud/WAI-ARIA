@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<h1>RadioButton</h1>
+		<h2 id="rg1_label">WAI-ARIA Group</h2>
+		<ul role="radiogroup" aria-labelledby="rg1_label" id="rg1">
+			<li aria-checked="false" role="radio" id="r1" tabindex="0">tab1</li>
+			<li aria-checked="false" role="radio" id="r2" tabindex="-1">dialog 2</li>
+			<li aria-checked="false" role="radio" id="r3" tabindex="-1">carousel 3</li>
+		</ul>
+
+		<label class="input-label"><input type="radio" name="radio" />radio1</label>
+		<label class="input-label"><input type="radio" name="radio" />radio2</label>
+		<label class="input-label"><input type="radio" name="radio" />radio3</label>
+		<script src="./js/script.js"></script>
+	</body>
+</html>

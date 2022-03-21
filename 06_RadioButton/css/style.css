@@ -1,0 +1,36 @@
+@charset "UTF-8";
+.input-label {
+  cursor: pointer;
+}
+
+ul[role="radiogroup"] {
+  display: flex;
+}
+
+li[role="radio"] {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.8rem;
+  cursor: pointer;
+  padding: 2px;
+}
+
+li[role="radio"]::before {
+  display: block;
+  content: "●";
+  font-size: 0.6rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  padding: 2px 2px 1px 2px;
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+li[role="radio"][aria-checked="true"]::before {
+  border-color: royalblue;
+  color: royalblue;
+}
