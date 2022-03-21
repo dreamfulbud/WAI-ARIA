@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.input-label {
+  cursor: pointer;
+}
+
+ul[role="radiogroup"] {
+  display: flex;
+}
+
+li[role="checkbox"] {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.8rem;
+  cursor: pointer;
+  padding: 2px;
+}
+
+li[role="checkbox"]::before {
+  display: block;
+  content: "✔︎";
+  font-size: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  padding: 2px 2px 1px 2px;
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+}
+
+li[role="checkbox"][aria-checked="true"]::before {
+  border-color: royalblue;
+  background-color: royalblue;
+  color: #fff;
+}
