@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<h1>레이어 팝업(Layer Popup)</h1>
+		<button class="layer-open">팝업창 열기</button>
+		<article class="layer-area" id="layer" aria-hidden="true">
+			<h2 class="first-element">사용법</h2>
+			<ol>
+				<li>팝업창에 포커스 이동</li>
+				<li>탭키 사용시 순환적 이동</li>
+				<li>ESC키/닫기버튼 사용 시 팝업종료</li>
+				<li>팝업 종료 시 포커스 이동</li>
+			</ol>
+			<button type="button" class="layer-close">닫기</button>
+		</article>
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>
