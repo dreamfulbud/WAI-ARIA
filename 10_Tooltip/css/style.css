@@ -1,0 +1,24 @@
+.wrap {
+  position: relative;
+}
+
+.tooltip-content {
+  width: 16rem;
+  padding: 1.8rem;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 0.4rem;
+  position: absolute;
+  left: 1rem;
+  top: 1.2em;
+  font-size: 1.4rem;
+}
+
+.tooltip-content {
+  display: none;
+}
+
+.tooltip-btn:hover + .tooltip-content,
+.tooltip-btn:focus + .tooltip-content {
+  display: block;
+}
