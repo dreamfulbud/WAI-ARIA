@@ -13,3 +13,5 @@
 9. [레이어 팝업(Layer Popup)](https://dreamfulbud.github.io/WAI-ARIA/09_LayerPopup)
 10. [툴팁(Tooltip)](https://dreamfulbud.github.io/WAI-ARIA/10_Tooltip)
 11. [필수 입력 항목(Required)](https://dreamfulbud.github.io/WAI-ARIA/11_Required)
+12. [플레이스홀더(Placeholder)](https://dreamfulbud.github.io/WAI-ARIA/12_Placeholder)
+13. [타임 세션(Time Limit)](https://dreamfulbud.github.io/WAI-ARIA/13_TimeLimit)
