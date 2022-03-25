@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<h1>플레이스 홀더(Placeholder)</h1>
+		<ul>
+			<li>Placeholder 속성을 label 요소를 대체할 목적으로 사용해서는 안된다</li>
+			<li>명도대비 4.5:1을 준수할 것</li>
+			<li>aria-labelledby 속성 사용시 label 요소에 명시되어 있는 성명을 무시하므로 주의.</li>
+		</ul>
+		<label for="user-name">성명<span class="require-ico">필수입력</span></label>
+		<div>
+			<span class="visually-hidden" id="placeholder-name">예) 홍길동</span>
+			<input class="inputs" type="text" name="name" id="user-name" aria-describedby="placeholder-name" />
+		</div>
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>
